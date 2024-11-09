@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+    <div class="container w-75 bg-white mt-5 rounded shadow text-center pb-5">
+        <div class="text-end">
+            <a href="../html/principal-e.html">
+                <button type="button" class="btn btn-danger">volver</button>
+            </a>
+
+            <a href="../index.html">
+                <button type="button" class="btn btn-danger">cerrar sesion</button>
+            </a>
+            <img src="../img/logo-sin.png" width="90" alt="">
+        </div>
+        <div class="section">
+            <h1>Pedidos hechos</h1>
+            <table class="table table-bordered table-hover table-danger mt-3">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Pedido</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="res">
+                </tbody>
+            </table>
+            <button class="btn btn-danger mt-3" id="boton">Mostrar</button>
+        </div>
+    </div>
+    <script src="../js/pedidos.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Empleado</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+    <div class="container w-75 bg-white mt-5 rounded shadow p-5">
+        <div class="text-end">
+            <a href="../html/principal-e.html">
+                <button type="button" class="btn btn-danger">Volver</button>
+            </a>
+            <img src="../img/logo-sin.png" width="90" alt="">
+        </div>
+        <h1 class="text">Enviar Mensaje al Administrador</h1>
+        
+        <form id="employeeForm">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" class="form-control border-danger" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea id="mensaje" class="form-control border-danger" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-danger w-100">Enviar</button>
+        </form>
+    </div>
+    <script src="../js/comunicacion.js"></script> 
+</body>
+</html>

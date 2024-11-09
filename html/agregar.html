@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+    <div class="container w-75 bg-white mt-5 rounded shadow text-center p-5">
+        <div class="text-end">
+            <a href="../html/principal-e.html">
+                <button type="button" class="btn btn-danger">volver</button>
+            </a>
+
+            <a href="../index.html">
+                <button type="button" class="btn btn-danger">cerrar sesion</button>
+            </a>
+            <img src="../img/logo-sin.png" width="90" alt="">
+        </div>
+        <h1 class="mb-4">Añadir Productos</h1>
+        <form id="formulario" action="#" method="post" onsubmit="enviarFormulario(event)" class="text-start">
+            <div class="mb-3">
+                <label for="codigo" class="form-label">Código:</label>
+                <input type="text" id="codigo" name="code" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="precio" class="form-label">Precio:</label>
+                <input type="number" id="precio" name="precio" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="cantidad" class="form-label">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" class="form-control" required>
+            </div>
+
+            <input type="submit" value="Enviar" class="btn btn-danger w-100">
+        </form>
+        
+        <div class="section mt-5">
+            <h2>Productos Disponibles</h2>
+            <table class="table table-bordered table-hover table-danger mt-3">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody id="res"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/productos.js"></script>
+</body>
+</html>

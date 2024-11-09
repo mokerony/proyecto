@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<div class="container w-75 bg-white mt-5 rounded shadow p-5">
+    <div class="text-end">
+        <a href="../html/admin.html">
+            <button type="button" class="btn btn-danger">volver</button>
+        </a>
+
+        <a href="../index.html">
+            <button type="button" class="btn btn-danger">cerrar sesion</button>
+        </a>
+        <img src="../img/logo-sin.png" width="90" alt="">
+    </div>
+<body onload="mostrarProductos()">
+    
+        <div class="text-center">
+            <h1 class="mb-4">Productos Disponibles</h1>
+            <table class="table table-bordered table-hover table-danger">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody id="res">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/stock.js"></script>
+</body>
+</html>

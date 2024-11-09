@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Empleados</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+    
+    <div class="container w-75 bg-white mt-5 rounded shadow text-center pb-5">
+        <div class="text-end">
+            <a href="../html/fumemp.html">
+                <button type="button" class="btn btn-danger">Volver</button>
+            </a>
+            <a href="../index.html">
+                <button type="button" class="btn btn-danger">Cerrar Sesión</button>
+            </a>
+            <img src="../img/logo-sin.png" width="90" alt="">
+        </div>
+        
+        <h1 class="text-center">Empleados</h1>
+        
+        <table class="table table-bordered table-hover table-danger mt-3">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Usuario</th>
+                    <th>Sede</th> <!-- Nueva columna para la sede -->
+                </tr>
+            </thead>
+            <tbody id="empleados-container">
+                <!-- Aquí se insertarán los empleados desde JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Cargar el archivo JavaScript -->
+    <script src="../js/verem.js"></script>
+</body>
+</html>
